@@ -28,9 +28,13 @@ const ExerciseCard = styled.div`
   }
 `;
 
-const ExerciseCardTitle = styled.h3``;
+const ExerciseCardTitle = styled.h3`
+  font-size: calc(18px * 1.25);
+`;
 
-const ExerciseCardSubTitle = styled.div``;
+const ExerciseCardSubTitle = styled.div`
+  font-size: calc(16px * 1.25);
+`;
 
 export const Home = React.memo(() => {
   const history = useHistory();

@@ -6,17 +6,19 @@ import { God } from "../pages/God";
 import { Home } from "../pages/Home";
 import { Words } from "../pages/Words";
 import { GlobalStyles } from "./GlobalStyles";
+import { rem } from "polished";
 
 const Container = styled.div``;
 
 const Header = styled.header`
-  height: 100px;
+  height: 125px;
   background-color: #c5ffe5;
-  padding-top: 24px;
-  padding-left: 20px;
+  padding-top: 30px;
+  padding-left: 25px;
 `;
 
 const HeaderTitle = styled.h1`
+  font-size: 40px;
 `;
 
 const Main = styled.main`

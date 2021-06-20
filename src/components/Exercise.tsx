@@ -10,11 +10,11 @@ const Container = styled.div`
 `;
 
 const SummaryDisplay = styled.div`
-  font-size: 22px;
+  font-size: calc(22px * 1.25);
 `;
 
 const QuestionDisplay = styled.div`
-  font-size: 18px;
+  font-size: calc(18px * 1.25);
 `;
 
 type UserAnswerInputStatus = "Correct" | "Incorrect" | "Neutral";
@@ -26,9 +26,9 @@ interface UserAnswerInputProps {
 const UserAnswerInput = styled.input<UserAnswerInputProps>`
   border: none;
   border-bottom: 1px solid #333;
-  width: 200px;
+  width: calc(200px * 1.25);
   text-align: center;
-  font-size: 20px;
+  font-size: calc(20px * 1.25);
   background-color: ${props => props.status === "Correct" ? "#b4f5dc" : props.status === "Incorrect" ? "#fadddd" : "transparent"};
 
   &:focus {
@@ -44,15 +44,15 @@ const UserAnswerInput = styled.input<UserAnswerInputProps>`
 `;
 
 const SubmitButton = styled.button`
-  width: 200px;
-  margin-top: 12px;
-  font-size: 18px;
+  width: calc(1.25 * 200px);
+  margin-top: calc(1.25 * 12px);
+  font-size: calc(1.25 * 18px);
 `;
 
 const ActualAnswerDisplay = styled.div`
-  font-size: 20px;
+  font-size: calc(1.25 * 20px);
   color: #72e472;
-  height: 42px;
+  height: calc(1.25 * 42px);
 `;
 
 type ExerciseState = "Question" | "Answer" | "Finished";
