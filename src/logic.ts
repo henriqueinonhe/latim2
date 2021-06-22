@@ -28,7 +28,7 @@ export const declinations : Record<string, Declination> = {
       plural: "ārum"
     },
     dativo: {
-      singular: "ae ",
+      singular: "ae",
       plural: "īs"
     },
     ablativo: {
@@ -93,7 +93,7 @@ export const declinations : Record<string, Declination> = {
       plural: "ōrum"
     },
     dativo: {
-      singular: "ō ",
+      singular: "ō",
       plural: "īs"
     },
     ablativo: {
@@ -216,5 +216,5 @@ export function answerIsCorrect(actualAnswer : string | Array<string>, userAnswe
     return actualAnswer.includes(userAnswer);
   }
 
-  return actualAnswer === userAnswer;
+  return actualAnswer.trim() === userAnswer.trim();
 }

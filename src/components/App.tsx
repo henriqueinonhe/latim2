@@ -6,19 +6,26 @@ import { God } from "../pages/God";
 import { Home } from "../pages/Home";
 import { Words } from "../pages/Words";
 import { GlobalStyles } from "./GlobalStyles";
-import { rem } from "polished";
 
 const Container = styled.div``;
 
 const Header = styled.header`
   height: 125px;
   background-color: #c5ffe5;
-  padding-top: 30px;
   padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 `;
 
 const HeaderTitle = styled.h1`
   font-size: 40px;
+`;
+
+const Version = styled.div`
+  font-family: Arial;
+  font-size: 12px;
 `;
 
 const Main = styled.main`
@@ -36,6 +43,7 @@ export const App = React.memo(() => {
 
       <Header>
         <HeaderTitle>Exercícios de Latim</HeaderTitle>
+        <Version>v1.0.1</Version>
       </Header>
 
       <Main>
